@@ -1,0 +1,51 @@
+.carousel-item {
+    height: 40rem; 
+    width: 100%;
+}
+
+img { 
+    opacity: 50%;    
+}
+
+
+
+h5,p {
+
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* 
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Medium size devices */
+@media screen and (max-width: 1024px) {
+    .carousel-item {
+        height: 25rem; 
+    
+    }
+    
+    h5,p {
+        display: block;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+
+}
+/* small size devices */
+@media screen and (max-width: 600px) {
+    .carousel-item {
+        height: 25rem; 
+    
+    }
+    
+    h5,p {
+        display: block;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+
+}
