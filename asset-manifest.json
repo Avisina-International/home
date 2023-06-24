@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.4f8acc70.css",
-    "main.js": "/website/static/js/main.5d4c7f02.js",
+    "main.css": "/website/static/css/main.7f21c0ec.css",
+    "main.js": "/website/static/js/main.b90a0108.js",
     "static/js/787.28cb0dcd.chunk.js": "/website/static/js/787.28cb0dcd.chunk.js",
+    "static/media/defaultproduct.jpg": "/website/static/media/defaultproduct.33e775c0c90e501f3319.jpg",
+    "static/media/barbery.jpg": "/website/static/media/barbery.6d2540b0a34e9e68441f.jpg",
+    "static/media/Barbery_Catalog.pdf": "/website/static/media/Barbery_Catalog.83e9282b6a89ecedacb8.pdf",
     "static/media/logo.jpg": "/website/static/media/logo.b7903dee054b04be9bcc.jpg",
     "static/media/img2.jpg": "/website/static/media/img2.93b4e19be3f60e283f9f.jpg",
     "static/media/img3.jpg": "/website/static/media/img3.b75575e6564aff5c80f9.jpg",
     "static/media/img1.jpg": "/website/static/media/img1.64ecc8ee07cb5f31f69a.jpg",
     "index.html": "/website/index.html",
-    "main.4f8acc70.css.map": "/website/static/css/main.4f8acc70.css.map",
-    "main.5d4c7f02.js.map": "/website/static/js/main.5d4c7f02.js.map",
+    "main.7f21c0ec.css.map": "/website/static/css/main.7f21c0ec.css.map",
+    "main.b90a0108.js.map": "/website/static/js/main.b90a0108.js.map",
     "787.28cb0dcd.chunk.js.map": "/website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8acc70.css",
-    "static/js/main.5d4c7f02.js"
+    "static/css/main.7f21c0ec.css",
+    "static/js/main.b90a0108.js"
   ]
 }
