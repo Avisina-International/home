@@ -1,17 +1,16 @@
 import './App.css';
-import {Navbar} from './components/navbar/Navbar' 
-import { Footer } from './components/footer/Footer';
+import MyNavbar from './components/navbar'; 
+import MyAlert from './components/alert';
+import MyCrousel from './components/crousel';
+import MyContactUs from './components/contactUs';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      {/* <Crousel />
-      <About />
-      <Contact />*/}
-      <Footer/> 
-
-
+      <MyAlert text="Welcome to Avisina International" />
+      <MyNavbar />
+      <MyCrousel />
+      <MyContactUs />
     </div>
   );
 }

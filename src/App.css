@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -26,6 +27,32 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/*Crousel Section*/
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel {
+  width: 100%;
+}
+
+/*ContactUs section*/
+.contactus--section {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*Desktop View*/
+@media (min-width: 768px){
+  
+  .navbar-expand-md {
+    padding: 15px;
+  }
 }
 
 @keyframes App-logo-spin {
