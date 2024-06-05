@@ -1,16 +1,16 @@
 import './App.css';
-import MyNavbar from './components/navbar'; 
-import MyAlert from './components/alert';
+// import MyAlert from './components/alert';
+import Header from './components/header';
 import MyCrousel from './components/crousel';
 import MyContactUs from './components/contactUs';
-import Banner from './components/banner';
+import MyAboutUs from './components/aboutUs';
 function App() {
   return (
     <div className="App">
-      <MyAlert text="Welcome to Avisina International" />
-      <MyNavbar />
-      <Banner />
+      {/* <MyAlert text="Welcome to Avisina International" /> */}
+      <Header />
       <MyCrousel />
+      <MyAboutUs />
       <MyContactUs />
     </div>
   );

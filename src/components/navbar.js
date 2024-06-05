@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import '../App.css';
+import { Link } from "react-scroll";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
+  // NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -22,18 +23,25 @@ function MyNavbar(args) {
   return (
     <div>
     <Navbar expand="md" {...args}>
-      <NavbarBrand href="/">Avisina International</NavbarBrand>
+      {/* <NavbarBrand href="/">Avisina International</NavbarBrand> */}
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
-          <NavItem>
-            <NavLink href="/components/">About Us</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">
-              Contact Us
-            </NavLink>
-          </NavItem>
+        <NavItem>
+          <NavLink>
+            <Link to="contact"> Home </Link>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink>
+            <Link to="about"> About Us </Link>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink>
+            <Link to="contact"> Contact Us </Link>
+          </NavLink>
+        </NavItem>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
               Products

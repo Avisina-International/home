@@ -49,11 +49,32 @@
 }
 
 
-/*Desktop View*/
+/*Desktop View of Navbar*/
 @media (min-width: 768px){
   
   .navbar-expand-md {
-    padding: 15px;
+    padding: 9px 50px 0 50px;
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold !important;
+  }
+
+  .dropdown-menu {
+    padding-left: 50px;
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .dropdown-item {
+    color: white !important;
+    font-weight: bold;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: rgba(88, 88, 88, 0.6) !important;
   }
 }
 
@@ -67,7 +88,7 @@
 }
 
 
-/* Card Css used in the App*/
+/* Card CSS used in the App*/
 .card {
   width: 50rem;
   align-items: center;
@@ -79,11 +100,45 @@
   }
 }
 
-/* Banner Section */
-.banner {
+/*Header Section*/
+.header-container {
   background-image: url('https://images.pexels.com/photos/5841763/pexels-photo-5841763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
-  height: 100vh;
   width: 100%;
+  height: auto;
+}
+
+  /* Banner in Header Section*/
+  .banner--container {
+    width: 100%;
+    height: 40rem;
+  }
+  .banner--container > text{
+    padding: 189px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 10px 5px rgba(50, 50, 50, 100);
+  }
+  /* Mobile View of Banner*/
+  @media (max-width: 768px) {
+    .banner--container {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+  .banner--text{
+    height: 200px;
+  }
+
+/* Header Section Ends*/
+/* AboutUs section*/
+.aboutus--section{
+  background-color: #86b2ca;
+  padding: 50px;
 }

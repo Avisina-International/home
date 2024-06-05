@@ -3,7 +3,8 @@ import "../App.css";
 
 const Banner = (props) => {
   return (
-    <div className="banner">
+    <div className="banner--container">
+        <text>Avisina International</text>
     </div>
   );
 };

@@ -62,7 +62,7 @@ function MyContactUs() {
   };
 
   return (
-    <div className='contactus--section' id='contact'>
+    <section className='contactus--section' id='contact'>
       <div className='container'>
         <Card
           body
@@ -178,7 +178,7 @@ function MyContactUs() {
           </CardBody>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }
 
