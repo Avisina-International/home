@@ -17,11 +17,7 @@ function MyAboutUs() {
               <CardImg
                 alt="Logo"
                 src={Img}
-                style={{
-                  height: "400px",
-                  width: "500px",
-                  borderRadius: "25px"
-                }}
+                className='aboutus--card--image'
               />
               </div>
               </Col>

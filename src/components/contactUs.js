@@ -23,7 +23,9 @@ function MyContactUs() {
     FirstName: '',
     LastName: '',
     Email: '',
-    Phone: ''
+    Phone: '',
+    Subject: '',
+    Message: ''
   });
 
   const [errors, setErrors] = useState({});
@@ -63,7 +65,7 @@ function MyContactUs() {
 
   return (
     <section className='contactus--section' id='contact'>
-      <div className='container'>
+      <div className='container contact--container'>
         <Card
           body
           outline
@@ -150,26 +152,38 @@ function MyContactUs() {
               <Row className="justify-content-center">
                 <Col md={6} style={{ alignItems: 'center' }}>
                   <FormGroup>
-                    <Label for="dropdown">Subject ...</Label>
-                    <div className="dropdown">
-                      <button
-                        id="dropdown"
-                        className="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Dropdown button
-                      </button>
-                      <ul className="dropdown-menu dropdown-menu-dark">
-                        <li>   Surgical Tools</li>
-                        <li>   Barbery Catalogue</li>
-                        <li>   Other</li>
-                      </ul>
-                    </div>
+                  <Label for="Subject">Purpose of your Email</Label>
+                    <Input
+                      id="Subject"
+                      name="Subject"
+                      placeholder="i.e Barbery Catalogue"
+                      type="text"
+                      value={formData.Subject}
+                      onChange={handleChange}
+                    />
                   </FormGroup>
                 </Col>
               </Row>
+
+              <Row className="justify-content-center">
+                <Col style={{ alignItems: 'center'}}>
+                  <FormGroup>
+                  <Label for="Message">Enter Your Message</Label>
+                  <Col>
+                  <Input
+                    id="Message"
+                    name="Message"
+                    type="textarea"
+                    placeholder="i.e Barbery Catalogue"
+                    value={formData.Message}
+                    onChange={handleChange}
+                    style={{ width: '500px'}}
+                  />
+                  </Col>
+                  </FormGroup>
+                </Col>
+              </Row>
+              
 
               <Button type="submit">Send</Button>
             </Form>
