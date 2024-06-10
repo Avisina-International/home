@@ -6,6 +6,7 @@ import {
   Navbar,
   NavbarToggler,
   // NavbarBrand,
+  Button,
   Nav,
   NavItem,
   NavLink,
@@ -54,6 +55,18 @@ function MyNavbar(args) {
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
+        <Button
+              type="submit"
+              style={
+                { width:"150px",
+                  height: "40px",
+                  fontsize: "15px",
+                  borderRadius:"25px", 
+                  backgroundColor: 'rgb(36, 107, 145)',
+                  border:"transparent"
+                }}>
+          Members Area
+        </Button>
       </Collapse>
     </Navbar>
   </div>

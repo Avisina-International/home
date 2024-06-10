@@ -177,7 +177,6 @@ function MyContactUs() {
                     placeholder="i.e Barbery Catalogue"
                     value={formData.Message}
                     onChange={handleChange}
-                    style={{ width: '500px'}}
                   />
                   </Col>
                   </FormGroup>
@@ -185,7 +184,12 @@ function MyContactUs() {
               </Row>
               
 
-              <Button type="submit">Send</Button>
+              <Button
+              type="submit"
+              style={{width:"100px",
+              borderRadius:"25px", 
+              backgroundColor: 'rgb(36, 107, 145)'}}
+              >Send</Button>
             </Form>
 
 

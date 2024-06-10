@@ -97,7 +97,7 @@
 
 /* Card CSS used in the App*/
 .card {
-  align-items: center;
+  border-radius: 25px;
 }
 
 @media (max-width: 768px) {
@@ -171,3 +171,17 @@
   }
 }
 /* About us Section Ends*/
+
+/* Footer Section Starts */
+.Footer--Icons a {
+  transition: transform 0.3s ease-in-out;
+  size:1rem;
+}
+
+.Footer--Icons a:hover {
+  transform: scale(8.2);
+}
+.Footer--Container{
+  padding: 0px 10px 10px 10px;
+}
+/* Footer Section Ends */
