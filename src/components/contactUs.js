@@ -185,11 +185,16 @@ function MyContactUs() {
               
 
               <Button
-              type="submit"
-              style={{width:"100px",
-              borderRadius:"25px", 
-              backgroundColor: 'rgb(36, 107, 145)'}}
-              >Send</Button>
+                className='cool-button'
+                  type="submit"
+                  style={{
+                    width:"100px",
+                    borderRadius:"25px", 
+                    backgroundColor: 'rgb(36, 107, 145)',
+                    transition: "background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)"
+                }}>
+                Send
+              </Button>
             </Form>
 
 

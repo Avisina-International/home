@@ -56,15 +56,18 @@ function MyNavbar(args) {
           </UncontrolledDropdown>
         </Nav>
         <Button
-              type="submit"
-              style={
-                { width:"150px",
-                  height: "40px",
-                  fontsize: "15px",
-                  borderRadius:"25px", 
-                  backgroundColor: 'rgb(36, 107, 145)',
-                  border:"transparent"
-                }}>
+          type="submit"
+          className="cool-button"
+          style={{
+            width: "150px",
+            height: "40px",
+            fontSize: "15px",
+            borderRadius: "25px",
+            backgroundColor: 'rgb(36, 107, 145)',
+            border: "transparent",
+            color: "white",
+            transition: "background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)"
+          }}>
           Members Area
         </Button>
       </Collapse>

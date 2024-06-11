@@ -29,6 +29,11 @@
   color: #61dafb;
 }
 
+.cool--button:hover {
+  background-color: rgb(24, 80, 110);
+  transform: scale(1.05);
+}
+
 /*Crousel Section*/
 .carousel-img {
   width: 100%;
@@ -38,6 +43,7 @@
 .carousel {
   width: 100%;
 }
+/*Carousel section ends*/
 
 /*ContactUs section*/
 .contactus--section {
@@ -146,6 +152,7 @@
 /* Header Section Ends*/
 
 /* AboutUs section*/
+
 .aboutus--section{
   background-color: #86b2ca;
   padding: 50px;
@@ -155,7 +162,53 @@
   width: 500px;
   border-radius: 25px;
 }
-  /* Mobile View of AboutUS*/
+.aboutus--image--section {
+  position: relative;
+  display: inline-block;
+}
+
+.aboutus--card--image {
+  transition: filter 0.3s ease;
+  width: 100%;
+}
+
+.aboutus--image--section:hover .aboutus--card--image {
+  filter: blur(5px);
+}
+
+.aboutus--image--button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.aboutus--image--section:hover .aboutus--image--button {
+  display: block;
+}
+
+.aboutus--button {
+  background-color: rgb(184, 184, 184, 0.9);
+  opacity: 10px;
+  border: 2px solid gray;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.aboutus--content--heading{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Mobile View of AboutUS*/
 @media (max-width: 768px) {
 
   .aboutus--card--image{
