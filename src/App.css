@@ -29,10 +29,67 @@
   color: #61dafb;
 }
 
-.cool--button:hover {
-  background-color: rgb(24, 80, 110);
+/*Cool button animation*/
+.cool-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.cool-button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.75s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.cool-button:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cool-button:hover {
+  background-color: rgb(26, 87, 125);
   transform: scale(1.05);
 }
+/*Cool button animation*/
+
+/* page not found animmation */
+.pagenotfound--section {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #86b2ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pagenotfound--container {
+  text-align: center;
+  color: #fff;
+}
+
+.warning-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* page not found animmation */
 
 /*Crousel Section*/
 .carousel-img {

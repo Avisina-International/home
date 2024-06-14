@@ -1,9 +1,12 @@
 import React from "react"
 import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaFacebook } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+
 import "../App.css";
 
 const Footer = (props) => {
-  return (
+ const navigate = useNavigate();
+    return (
     <section>
         <div className="">
             <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#246B91' }}>
@@ -34,7 +37,7 @@ const Footer = (props) => {
                                 <h6 className="text-uppercase fw-bold">Avisina International</h6>
                                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#86b2ca', height: '2px' }} />
                                 <p>
-                                    Selling top quality surgical item worldwide. We aim to be the biggeest surgical tool provider in the Asian community.
+                                    Selling top quality surgical item worldwide. We aim to be the biggest surgical tool provider in the Asian community.
                                 </p>
                             </div>
 
@@ -42,7 +45,7 @@ const Footer = (props) => {
                                 <h6 className="text-uppercase fw-bold">Products</h6>
                                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                 <p>
-                                    <a href="#!" className="text-white">Barbery Catalogue</a>
+                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Barbery Catalogue</a>
                                 </p>
                             </div>
 
@@ -50,16 +53,16 @@ const Footer = (props) => {
                                 <h6 className="text-uppercase fw-bold">Useful links</h6>
                                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                 <p>
-                                    <a href="#!" className="text-white">Your Account</a>
+                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Your Account</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-white">Members Area</a>
+                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Members Area</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-white">Shipping Rates</a>
+                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Shipping Rates</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-white">Help</a>
+                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Help</a>
                                 </p>
                             </div>
 

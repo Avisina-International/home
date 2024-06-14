@@ -1,4 +1,4 @@
-import {React , useState} from 'react'
+import { React, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {
   Card,
@@ -14,11 +14,9 @@ import {
   Label,
   Input,
 } from 'reactstrap';
-import '../App.css'
-
+import '../App.css';
 
 function MyContactUs() {
-
   const [formData, setFormData] = useState({
     FirstName: '',
     LastName: '',
@@ -54,11 +52,19 @@ function MyContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      emailjs.send('service_p7p0z1l', 'template_9n464il', formData, 'e6vRvFQ3C8IXydtFb')
         .then((response) => {
-          console.log('SUCCESS!', response.status, response.text);
+          alert('SUCCESS! Your message has been sent.');
+          setFormData({
+            FirstName: '',
+            LastName: '',
+            Email: '',
+            Phone: '',
+            Subject: '',
+            Message: ''
+          });
         }, (err) => {
-          console.log('FAILED...', err);
+          alert('FAILED... An error occurred while sending your message.');
         });
     }
   };
@@ -66,25 +72,17 @@ function MyContactUs() {
   return (
     <section className='contactus--section' id='contact'>
       <div className='container contact--container'>
-        <Card
-          body
-          outline
-        >
+        <Card body outline>
           <CardBody>
             <CardTitle tag="h5">
               Contact Us
             </CardTitle>
-            <CardSubtitle
-              className="mb-2 text-muted"
-              tag="h6"
-            >
+            <CardSubtitle className="mb-2 text-muted" tag="h6">
               Contact us at our email for further queries.
             </CardSubtitle>
             <CardText>
               We are also actively available on social media platforms
             </CardText>
-
-
 
             <Form onSubmit={handleSubmit}>
               <Row>
@@ -94,7 +92,7 @@ function MyContactUs() {
                     <Input
                       id="FirstName"
                       name="FirstName"
-                      placeholder="i.e Jhon"
+                      placeholder="i.e John"
                       type="text"
                       value={formData.FirstName}
                       onChange={handleChange}
@@ -125,7 +123,7 @@ function MyContactUs() {
                     <Input
                       id="Email"
                       name="Email"
-                      placeholder="JhoneDoe@example.com"
+                      placeholder="JohnDoe@example.com"
                       type="email"
                       value={formData.Email}
                       onChange={handleChange}
@@ -152,7 +150,7 @@ function MyContactUs() {
               <Row className="justify-content-center">
                 <Col md={6} style={{ alignItems: 'center' }}>
                   <FormGroup>
-                  <Label for="Subject">Purpose of your Email</Label>
+                    <Label for="Subject">Purpose of your Email</Label>
                     <Input
                       id="Subject"
                       name="Subject"
@@ -166,38 +164,35 @@ function MyContactUs() {
               </Row>
 
               <Row className="justify-content-center">
-                <Col style={{ alignItems: 'center'}}>
+                <Col style={{ alignItems: 'center' }}>
                   <FormGroup>
-                  <Label for="Message">Enter Your Message</Label>
-                  <Col>
-                  <Input
-                    id="Message"
-                    name="Message"
-                    type="textarea"
-                    placeholder="i.e Barbery Catalogue"
-                    value={formData.Message}
-                    onChange={handleChange}
-                  />
-                  </Col>
+                    <Label for="Message">Enter Your Message</Label>
+                    <Col>
+                      <Input
+                        id="Message"
+                        name="Message"
+                        type="textarea"
+                        placeholder="i.e Barbery Catalogue"
+                        value={formData.Message}
+                        onChange={handleChange}
+                      />
+                    </Col>
                   </FormGroup>
                 </Col>
               </Row>
-              
 
               <Button
                 className='cool-button'
-                  type="submit"
-                  style={{
-                    width:"100px",
-                    borderRadius:"25px", 
-                    backgroundColor: 'rgb(36, 107, 145)',
-                    transition: "background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)"
+                type="submit"
+                style={{
+                  width: "100px",
+                  borderRadius: "25px",
+                  backgroundColor: 'rgb(36, 107, 145)',
+                  transition: "background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)"
                 }}>
                 Send
               </Button>
             </Form>
-
-
           </CardBody>
         </Card>
       </div>
@@ -205,4 +200,4 @@ function MyContactUs() {
   );
 }
 
-export default MyContactUs
+export default MyContactUs;

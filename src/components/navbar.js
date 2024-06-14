@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 import { Link } from "react-scroll";
+import { useNavigate } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -14,13 +15,14 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from 'reactstrap';
-
-function MyNavbar(args) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
+  } from 'reactstrap';
+  
+  function MyNavbar(args) {
+    const [isOpen, setIsOpen] = useState(false);
+    
+    const toggle = () => setIsOpen(!isOpen);
+    const navigate = useNavigate();
+    
   return (
     <div>
     <Navbar expand="md" {...args}>
@@ -56,6 +58,7 @@ function MyNavbar(args) {
           </UncontrolledDropdown>
         </Nav>
         <Button
+          onClick={() => navigate('/page-not-found')}
           type="submit"
           className="cool-button"
           style={{

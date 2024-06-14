@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from '../data/images/logo.png';
+import { useNavigate } from 'react-router-dom';
 import {
     CardImg,
     Container,
@@ -9,6 +10,7 @@ import {
   } from 'reactstrap';
 
 function MyAboutUs() {
+    const navigate = useNavigate();
   return (
   <section className='aboutus--section' id='about'> 
       <Container>
@@ -21,7 +23,11 @@ function MyAboutUs() {
                           className='aboutus--card--image'
                       />
                       <div className='aboutus--image--button'>
-                          <Button className='aboutus--button'>Learn More</Button>
+                            <Button 
+                                onClick={() => navigate('/page-not-found')}
+                                className='aboutus--button'>
+                                Learn More
+                            </Button>
                       </div>
                   </div>
               </Col>

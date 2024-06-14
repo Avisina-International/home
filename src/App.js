@@ -1,19 +1,18 @@
 import './App.css';
-// import MyAlert from './components/alert';
-import Header from './components/header';
-import MyCrousel from './components/crousel';
-import MyContactUs from './components/contactUs';
-import MyAboutUs from './components/aboutUs';
-import Footer from './components/footer'; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import PageNotFound from './pages/404';
 function App() {
   return (
     <div className="App">
-      {/* <MyAlert text="Welcome to Avisina International" /> */}
-      <Header />
-      <MyCrousel />
-      <MyAboutUs />
-      <MyContactUs />
-      <Footer />
+      <Router>
+        <div>
+          <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/page-not-found" element={<PageNotFound />}></Route>
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }
