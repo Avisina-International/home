@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { Link } from "react-scroll";
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  // NavbarBrand,
   Button,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   } from 'reactstrap';
   
   function MyNavbar(args) {
@@ -22,6 +17,7 @@ import {
     
     const toggle = () => setIsOpen(!isOpen);
     const navigate = useNavigate();
+    const location = useLocation();
     
   return (
     <div>
@@ -30,21 +26,31 @@ import {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
-        <NavItem>
-          <NavLink>
-            <Link to="contact"> Home </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link to="about"> About Us </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link to="contact"> Contact Us </Link>
-          </NavLink>
-        </NavItem>
+          <NavItem style={{ cursor: 'pointer' }}>
+            <NavLink >
+              <Link to="/home"> Home </Link> 
+            </NavLink>
+          </NavItem>
+          {location.pathname == '/home' && (
+            <>
+              <NavItem style={{ cursor: 'pointer' }}>
+                <NavLink>
+                  <a className href="#about"> About Us </a>
+                </NavLink>
+              </NavItem>
+              <NavItem style={{ cursor: 'pointer' }}>
+                <NavLink>
+                  <a href="#contact"> Contact Us </a>
+                </NavLink>
+              </NavItem>
+            </>
+          )}
+          <NavItem style={{ cursor: 'pointer' }}>
+            <NavLink>
+              <Link to='/products'> Products </Link>
+            </NavLink>
+          </NavItem>
+          {/* 
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
               Products
@@ -55,7 +61,8 @@ import {
               <DropdownItem divider />
               <DropdownItem>Reset</DropdownItem>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </UncontrolledDropdown> 
+          */}
         </Nav>
         <Button
           onClick={() => navigate('/page-not-found')}
