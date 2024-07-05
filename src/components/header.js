@@ -3,11 +3,11 @@ import MyNavbar from './navbar';
 import Banner from './banner';
 import '../App.css';
 
-const Header = () => {
+const Header = ({className , text}) => {
   return (
     <div className="header-container">
       <MyNavbar />
-      <Banner />
+      <Banner className={className} text={text}/>
     </div>
   );
 };

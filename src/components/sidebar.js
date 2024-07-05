@@ -1,17 +1,18 @@
 import React from 'react';
+import { GoDotFill } from "react-icons/go";
 import '../App.css';
 
 
 const Sidebar = ({ categories, onSelectCategory }) => {
   return (
     <div className="sidebar">
-      {
-      /* <img src={bannerImage} alt="Avisina International" className="banner" />*/}
-      <p>Categories</p>
+      <h3>Categories</h3>
       <ul>
         {categories.map((category) => (
           <li key={category}>
-            <button onClick={() => onSelectCategory(category)}>{category}</button>
+            <button onClick={() => onSelectCategory(category)}>
+            <GoDotFill />  {category}
+            </button>
           </li>
         ))}
       </ul>

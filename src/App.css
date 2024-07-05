@@ -298,25 +298,59 @@
 .Footer--Container{
   padding: 0px 10px 10px 10px;
 }
+
+
+.footer--items p {
+  cursor: pointer;
+}
+
+.footer--items a {
+  text-decoration: none;
+}
+
+.stylish--anchor p:hover {
+  transform: translateX(-10px);
+  transition: transform 0.3s ease;  
+}
+
 /* Footer Section Ends */
 
+/*Products Page CSS*/
+.product--banner--container {
+  width: 100%;
+  height: 25rem;
+}
+.product--banner--container > text{
+  padding: 50px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 4px 10px 5px rgba(50, 50, 50, 100);
+}
+.product--banner--text{
+  height: 200px;
+}
 .product-component {
   display: flex;
   height: 100vh;
+  background-color: #86b2ca;
+  padding: 0px 30px 0px 0px;
 }
 
+
+/*SideBar CSS*/
 .sidebar {
-  flex: 0 0 20%;
+  flex: 0 0 18%;
   background-color: #86b2ca;
   color: white;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.sidebar h3 {
-  margin-top: 20px;
 }
 
 .sidebar ul {
@@ -327,25 +361,23 @@
 
 .sidebar ul li {
   margin: 10px 0;
+  color: white;
 }
 
 .sidebar button {
-  width: 70%;
-  padding: 10px;
-  background-color: #246B91;
-  color: white;
+  width: 100%;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   text-align: left;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   border-radius: 5px;
-  margin: 5px 0;
+  font-weight: bold;
+  color: white;
 }
 
 .sidebar button:hover {
-  background-color: #1f5c79;
   transform: translateX(5px);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .banner {
@@ -356,6 +388,8 @@
 .product-display {
   flex: 1;
   padding: 20px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 

@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Sidebar from "../components/sidebar";
 import ProductDisplay from "../components/productdisplay";
 import productData from '../data/products.json';
-import MyNavbar from "../components/navbar";
+import Header from "../components/header";
 import '../App.css';
 
 const Products = (props) => {
@@ -15,9 +15,7 @@ const Products = (props) => {
 
   return (
     <>
-      <MyNavbar />
-      <div className="products--banner">
-      </div>
+      <Header text="Avisina Products" className="product--banner--container" />
       <div className="product-component">
         <Sidebar categories={Object.keys(productData)} onSelectCategory={handleCategoryChange} />
         <ProductDisplay products={productData[selectedCategory]} />

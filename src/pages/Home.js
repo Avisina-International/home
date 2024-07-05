@@ -11,7 +11,7 @@ const Home = (props) => {
     return (
         <div className="App">
           {/* <MyAlert text="Welcome to Avisina International" /> */}
-          <Header />
+          <Header className="banner--container" text="Avisina International"/>
           <MyCrousel />
           <MyAboutUs />
           <MyContactUs />

@@ -32,7 +32,7 @@ const Footer = (props) => {
 
                 <section>
                     <div className="Footer--Container text-center text-md-start mt-5">
-                        <div className="row mt-3">
+                        <div className="row mt-3 footer--items">
                             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 <h6 className="text-uppercase fw-bold">Avisina International</h6>
                                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#86b2ca', height: '2px' }} />
@@ -45,7 +45,7 @@ const Footer = (props) => {
                                 <h6 className="text-uppercase fw-bold">Products</h6>
                                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                 <p>
-                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Barbery Catalogue</a>
+                                    * <a onClick={() => navigate('/page-not-found')} className="text-white">Barbery Catalogue</a>
                                 </p>
                             </div>
 
@@ -53,16 +53,16 @@ const Footer = (props) => {
                                 <h6 className="text-uppercase fw-bold">Useful links</h6>
                                 <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                 <p>
-                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Your Account</a>
+                                    * <a onClick={() => navigate('/page-not-found')} className="text-white">Your Account</a>
                                 </p>
                                 <p>
-                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Members Area</a>
+                                    * <a onClick={() => navigate('/page-not-found')} className="text-white">Members Area</a>
                                 </p>
                                 <p>
-                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Shipping Rates</a>
+                                    * <a onClick={() => navigate('/page-not-found')} className="text-white">Shipping Rates</a>
                                 </p>
                                 <p>
-                                    <a onClick={() => navigate('/page-not-found')} className="text-white">Help</a>
+                                    * <a onClick={() => navigate('/page-not-found')} className="text-white">Help</a>
                                 </p>
                             </div>
 

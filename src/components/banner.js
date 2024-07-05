@@ -1,10 +1,10 @@
 import React from "react";
 import "../App.css";
 
-const Banner = (props) => {
+const Banner = ({className, text}) => {
   return (
-    <div className="banner--container">
-        <text>Avisina International</text>
+    <div className={className}>
+        <text>{text}</text>
     </div>
   );
 };
